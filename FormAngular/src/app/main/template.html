@@ -1,0 +1,25 @@
+<div>
+    <header>
+        <header-component/>
+    </header>
+    <form name="userForm">
+        <div layout="column">
+            <div class="techs" layout-align="center" flex>
+                <div id="body" layout-gt-xs="row">
+                    <h1>Ejemplo form con:</h1>
+                    <md-button class="header-component-text" href="https://angularjs.org/"> <img src="app/img/LogoAngular.png" /></md-button>
+                    <div id="form">
+                        <label for="id">Nombre</label>
+                        <input-text-component id="name" required name="name" params="vm.form.name"></input-text-component>
+                        <label for="surname">Apellido</label>
+                        <input-text-component id="surname" params="vm.form.surname"></input-text-component>
+                        </md-input-container>
+                    </div>
+                    <div id="footer">
+                        <md-button ng-disabled="!userForm.$valid" class="md-raised" ng-click="vm.saveUser()">Crear</md-button>
+                        <md-button flex class="md-raised md-primary" ng-click="vm.showUsers()">Ver lista usuarios</md-button>
+                    </div>
+                </div>
+            </div>
+    </form>
+    </div>
