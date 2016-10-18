@@ -1,0 +1,29 @@
+html {
+  font-family: 'Roboto Slab', serif;
+}
+
+#toolbar {
+  background-color: black;
+}
+
+#buttontoolbar {
+    float: right;
+}
+
+#body {
+  text-align: center;
+}
+
+#form {
+  margin-top: 120px;
+  text-align: left
+}
+
+#footer {
+  margin-top: 60px;
+}
+
+.techs {
+  display: flex;
+  flex-flow: row wrap;
+}
